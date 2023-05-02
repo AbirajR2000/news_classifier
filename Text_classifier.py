@@ -44,7 +44,7 @@ saved_model = pickle.dumps(naivebayes)
 
 s = pickle.loads(saved_model)
 
-st.header("NeWs ClassIFieR DeMo")
+st.header("News Classifier Demo")
 input=st.text_input("Enter the news headline")
 if st.button("classify"):
     vec = vector.transform([input]).toarray()
